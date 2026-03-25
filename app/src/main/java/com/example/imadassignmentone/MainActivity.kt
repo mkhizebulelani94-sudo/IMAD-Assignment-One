@@ -58,7 +58,15 @@ class MainActivity : ComponentActivity() {
             else if (textInput.text.toString().lowercase() == "after dinner"){
                 resultText.text = afterdinnerSpark
             }
+            else {
+                resultText.text = "Enter one of the following: morning, midmorning, breakfast, snacktime, dinner, after dinner"
+            }
 
+        }
+        //Reset Button
+        resetButton.setOnClickListener {
+            textInput.text.clear()
+            resultText.text = "Enter the time of day"
         }
         }
     }
