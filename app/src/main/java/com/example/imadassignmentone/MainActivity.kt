@@ -1,6 +1,8 @@
 package com.example.imadassignmentone
 
 import android.os.Bundle
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -19,6 +21,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
         setContentView(R.layout.activity_main)
+        //Variable declarations
+        val textInput = findViewById<EditText>(R.id.txtIn)
+        val resultText = findViewById<TextView>(R.id.TvResult)
         }
     }
 }
