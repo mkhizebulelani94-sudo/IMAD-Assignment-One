@@ -43,6 +43,12 @@ class MainActivity : ComponentActivity() {
             if (textInput.text.toString().lowercase() == "morning"){
                 resultText.text = morningSpark
             }
+            else if (textInput.text.toString().lowercase() == "midmorning"){
+                resultText.text = midmorningSpark
+            }
+            else if (textInput.text.toString().lowercase() == "breakfast"){
+                resultText.text = breakfastSpark
+            }
 
         }
         }
