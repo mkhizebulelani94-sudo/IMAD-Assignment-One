@@ -1,6 +1,7 @@
 package com.example.imadassignmentone
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.ComponentActivity
@@ -24,6 +25,21 @@ class MainActivity : ComponentActivity() {
         //Variable declarations
         val textInput = findViewById<EditText>(R.id.txtIn)
         val resultText = findViewById<TextView>(R.id.TvResult)
+        val checkButton = findViewById<Button>(R.id.btnResult)
+        val resetButton = findViewById<Button>(R.id.btnReset)
+
+        //Declaring the sparks for each time of day
+        val morningSpark = "Send a 'Good Morning' text to a friend or family member"
+        val midmorningSpark = "Reach out to a colleague with a quick 'Thank You'"
+        val breakfastSpark = "Go and get ready for your classes"
+        val snacktimeSpark = "Share a funny meme or an interesting link with a friend"
+        val dinnerSpark = "Call a friend or relative for a 5-minute catch up"
+        val afterdinnerSpark = "Leave a thoughtful comment on a friend's post"
+
+        //Check button with if and else if statements for each spark
+        checkButton.setOnClickListener {
+
+        }
         }
     }
 }
