@@ -38,6 +38,11 @@ class MainActivity : ComponentActivity() {
 
         //Check button with if and else if statements for each spark
         checkButton.setOnClickListener {
+            val text = textInput.text.toString().uppercase()
+
+            if (textInput.text.toString().lowercase() == "morning"){
+                resultText.text = morningSpark
+            }
 
         }
         }
