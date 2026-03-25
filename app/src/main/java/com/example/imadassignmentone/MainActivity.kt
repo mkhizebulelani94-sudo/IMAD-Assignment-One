@@ -20,7 +20,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContent {
         setContentView(R.layout.activity_main)
         //Variable declarations
         val textInput = findViewById<EditText>(R.id.txtIn)
@@ -68,6 +67,6 @@ class MainActivity : ComponentActivity() {
             textInput.text.clear()
             resultText.text = "Enter the time of day"
         }
-        }
     }
 }
+
