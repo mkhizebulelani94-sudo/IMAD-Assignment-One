@@ -32,6 +32,7 @@ class MainActivity : ComponentActivity() {
         val midmorningSpark = "Reach out to a colleague with a quick 'Thank You'"
         val breakfastSpark = "Go and get ready for your classes"
         val snacktimeSpark = "Share a funny meme or an interesting link with a friend"
+        val playtimeSpark = "Go and meet up with your teammates for practice"
         val dinnerSpark = "Call a friend or relative for a 5-minute catch up"
         val afterdinnerSpark = "Leave a thoughtful comment on a friend's post"
 
@@ -51,6 +52,9 @@ class MainActivity : ComponentActivity() {
             else if (textInput.text.toString().lowercase() == "snacktime"){
                 resultText.text = snacktimeSpark
             }
+            else if (textInput.text.toString().lowercase() == "playtime"){
+                resultText.text = playtimeSpark
+            }
             else if (textInput.text.toString().lowercase() == "dinner"){
                 resultText.text = dinnerSpark
             }
@@ -58,7 +62,7 @@ class MainActivity : ComponentActivity() {
                 resultText.text = afterdinnerSpark
             }
             else {
-                resultText.text = "Enter one of the following: morning, midmorning, breakfast, snacktime, dinner, after dinner"
+                resultText.text = "Enter one of the following: morning, midmorning, breakfast, snacktime, playtime, dinner, after dinner"
             }
 
         }

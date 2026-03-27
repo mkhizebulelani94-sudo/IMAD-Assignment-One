@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_launcher_foreground"
-    android:backgroundTint="@color/purple_700" >
+    android:backgroundTintMode="add"
+    android:backgroundTint="@color/teal_200" >
 
 
     <TextView
@@ -28,6 +29,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:inputType="text"
+        android:textStyle="bold"
+        android:editable="true"
         android:textSize="25dp" />
 
     <TextView
@@ -35,6 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:textSize="30dp"
+        android:textStyle="bold"
+
         android:outlineProvider="bounds"
         android:outlineAmbientShadowColor="@color/black"
         android:outlineSpotShadowColor="@color/black"
@@ -46,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tap to Show Response"
+        android:layout_marginTop="140dp"
         android:textColor="#FFFFFF"
         android:backgroundTint="@android:color/holo_green_dark" />
 
@@ -55,6 +61,9 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#F44336"
         android:text="Reset"
+        android:outlineProvider="paddedBounds"
+
+        android:layout_marginTop="10dp"
         android:textColor="#FFFFFF" />
 
 
