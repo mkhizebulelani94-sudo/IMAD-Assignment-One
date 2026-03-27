@@ -30,13 +30,13 @@
         android:fontFamily="sans-serif"
         android:inputType="text"
         android:textStyle="bold"
-        android:textSize="25dp" />
+        android:textSize="13dp" />
 
     <TextView
         android:id="@+id/TvResult"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:textSize="25dp"
+        android:textSize="13dp"
         android:text="Response"
         android:textStyle="bold"
         android:outlineProvider="bounds"
@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tap to Show Response"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="140dp"
         android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
